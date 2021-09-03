@@ -57,7 +57,7 @@ export const ProductModal: React.FC<ProductModalProp> = ({ id }) => {
       />
 
       {/* modal dialog */}
-      <Modal isOpen={isOpen} onClose={onClose} size="lg">
+      <Modal isOpen={isOpen} onClose={onClose} size="2xl">
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Modal Title</ModalHeader>

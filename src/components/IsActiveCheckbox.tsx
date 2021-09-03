@@ -60,7 +60,7 @@ export const IsActiveCheckbox: React.FC = () => {
 
   return (
     <>
-      <GridItem order={{ base: 3, md: 4 }}>
+      <GridItem order={{ base: 3, md: 4 }} colSpan={{ base: 2, lg: "auto" }}>
         {/* check box */}
         <FormControl id="isActive" onClick={() => setIsOpen(true)}>
           <FormLabel>Product Active</FormLabel>

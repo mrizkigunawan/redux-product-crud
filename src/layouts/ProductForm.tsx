@@ -117,7 +117,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 
           {/* id form field (readonly), only show in detail/edit mode */}
           {editMode && (
-            <GridItem>
+            <GridItem colSpan={{ base: 2, lg: "auto" }}>
               <FormControl id="id">
                 <FormLabel>Product ID</FormLabel>
                 <Input type="text" defaultValue={product.id} readOnly />
@@ -126,7 +126,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
           )}
 
           {/* product name input */}
-          <GridItem>
+          <GridItem colSpan={{ base: 2, lg: "auto" }}>
             <FormControl id="name">
               <FormLabel>Product Name</FormLabel>
               <Input
@@ -147,7 +147,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
           </GridItem>
 
           {/* qty input */}
-          <GridItem>
+          <GridItem colSpan={{ base: 2, lg: "auto" }}>
             <FormControl id="qty">
               <FormLabel>Quantity</FormLabel>
               {/* use controller for manage n validate custom number input */}
@@ -182,7 +182,11 @@ export const ProductForm: React.FC<ProductFormProps> = ({
           </GridItem>
 
           {/* picture upload */}
-          <GridItem rowSpan={3} order={{ base: 4, md: 3 }}>
+          <GridItem
+            rowSpan={3}
+            order={{ base: 4, md: 3 }}
+            colSpan={{ base: 2, lg: "auto" }}
+          >
             <FormControl id="picture">
               <FormLabel>Photo</FormLabel>
               {/* input file custom component */}
@@ -206,7 +210,10 @@ export const ProductForm: React.FC<ProductFormProps> = ({
           </GridItem>
 
           {/* expiredAt input */}
-          <GridItem order={{ base: 3, md: 4 }}>
+          <GridItem
+            order={{ base: 3, md: 4 }}
+            colSpan={{ base: 2, lg: "auto" }}
+          >
             <FormControl id="date">
               <FormLabel>Expired Date</FormLabel>
               <Input
