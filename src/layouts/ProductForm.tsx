@@ -109,7 +109,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid
-          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+          templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
           gap={6}
         >
           {/* image/picture preview */}
